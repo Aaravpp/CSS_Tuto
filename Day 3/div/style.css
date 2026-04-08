@@ -1,0 +1,9 @@
+div{
+    border: solid 2px;
+    width: 100%;
+    height: 200px;
+    background: aquamarine;
+    color: black;
+    padding: 10px;
+    margin: auto;
+}
