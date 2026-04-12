@@ -1,0 +1,43 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.container{
+    background-color: rgb(57, 53, 53);
+    color: white;
+    font-weight: 600;
+    font-size: 40px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 70%;
+    overflow: hidden;
+    white-space: nowrap;
+
+}
+
+p{
+    animation-name: moving;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    /* animation-delay: 4s; */
+}
+
+@keyframes moving {
+    from{
+        margin-left: 150%
+    }
+    to{
+        margin-left: -120%;
+    }
+    
+}
