@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    .sun{
+    width: 80px;
+    height: 80px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    }
+    
+    .solar{
+        height: 750px;
+        width: 750px;
+        background-color: rgb(12, 12, 50);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        animation: moving 3s linear infinite;
+    }
+
+}
+
+
+@keyframes moving {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+.mercury{
+    width: 30px;
+    height: 30px;
+    background-color: orange;
+    border-radius: 50%;
+    transform: translateX(215px);
+}
+
+.venus{
+    width: 30px;
+    height: 30px;
+    background-color: rgb(181, 81, 15);
+    border-radius: 50%;
+    transform: translate(140px, -70px);
+}
+
+.earth{
+    width: 45px;
+    height: 45px;
+    background-color: rgb(35, 93, 200);
+    border-radius: 50%;
+    transform: translate(160px, -40px);
+}
+
+.mars{
+    width: 30px;
+    height: 30px;
+    background-color: rgb(220, 35, 94);
+    border-radius: 50%;
+    transform: translate(160px);
+}
+
+.jupiter{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(195, 201, 111);
+    border-radius: 50%;
+    transform: translate(150px, 100px);
+}
+
+.saturn{
+    width: 50px;
+    height: 60px;
+    background-color: rgb(185, 151, 0);
+    border-radius: 50%;
+    transform: translate(170px);
+}
+
+.uranus{
+    width: 50px;
+    height: 60px;
+    background-color: rgb(59, 175, 237);
+    border-radius: 50%;
+    transform: translate(140px, -100px);
+}
+
+.neptune{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(14, 11, 203);
+    border-radius: 50%;
+    transform: translate(170px, -50px);
+}
+
+.pluto{
+    width: 20px;
+    height: 20px;
+    background-color: rgb(123, 130, 4);
+    border-radius: 50%;
+    transform: translate(180px);
+}
+
