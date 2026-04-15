@@ -10,7 +10,8 @@
    * We're telling it to watch the 'transform' and 'box-shadow' properties
    * and animate any changes over 0.3 seconds.
   */
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  /* transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; */
+  transition: all 0.3s ease-in-out;
 }
 
 /*
