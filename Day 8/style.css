@@ -28,7 +28,7 @@
     /* transform: skew(40deg); */
 }
 
-.box:hover{
+/* .box:hover{ */
     /* background-color: red;
     width: 200px;
     height: 200px; */
@@ -40,6 +40,6 @@
     transform: skew(20deg); */
     /* transform: translateZ(200px); */
     /* transform: rotate(180deg); */
-    transform: translateY(100px) rotate(60deg) scale(1.5);
+    /* transform: translateY(100px) rotate(60deg) scale(1.5); */
 
-}
+/* } */
