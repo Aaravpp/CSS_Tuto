@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    img{
+        width: 100vw;
+        height: 100vh;
+    }
+
+}
+
+#Sun{
+    width: 70px;
+    height: 70px;
+    background-color: rgb(255, 47, 0);
+    border-radius: 50%;
+    animation: moving-sun 2s linear infinite;
+    position: absolute;
+    z-index: 1;
+    box-shadow: 0 0 20px 6px rgb(255, 115, 0);
+}
+
+@keyframes moving-sun {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.circle{
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(245, 243, 243, 0.018);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mercury{
+    width: 130px;
+    height: 130px;
+
+}
+
+.venus{
+    width: 180px;
+    height: 180px;
+    
+}
+
+.earth{
+    width: 230px;
+    height: 230px;
+}
+
+.mars{
+    width: 300px;
+    height: 300px;
+}
+
+.jupiter{
+    width: 380px;
+    height: 380px;
+}
+
+.saturn{
+    width: 450px;
+    height: 450px;
+}
+
+.uranus{
+    width: 540px;
+    height: 540px;
+}
+
+.neptune{
+    width: 630px;
+    height: 630px;
+}
+
+.pluto{
+    width: 730px;
+    height: 730px;
+}
+
+#planet1{
+    width: 25px;
+    height: 25px;
+    background-color: rgb(161, 98, 16);
+    position: absolute;
+    z-index: 1;
+    border-radius: 50%;
+    /* top: 20px; */
+    /* left: 50px; */
+    animation: moving-mercury 1.5s linear infinite;
+}
+
+
+@keyframes moving-mercury {
+   from{
+        transform: rotate(0deg) translate(65px);
+   }to{
+        transform: rotate(360deg) translate(65px);
+   }
+}
+
+#planet2{
+    width: 34px;
+    height: 34px;
+    background-color: rgb(132, 44, 11);
+    position: absolute;
+    z-index: 1;
+    border-radius: 50%;
+    /* top: 20px; */
+    /* left: 50px; */
+    animation: moving-venus 3s linear infinite;
+}
+
+
+@keyframes moving-venus {
+   from{
+        transform: rotate(0deg) translate(90px);
+   }to{
+        transform: rotate(360deg) translate(90px);
+   }
+}
+
+#planet3{
+    width: 37px;
+    height: 37px;
+    background-color: rgb(50, 111, 215);
+    position: absolute;
+    z-index: 1;
+    border-radius: 50%;
+    /* top: 20px; */
+    /* left: 50px; */
+    animation: moving-earth 5.5s linear infinite;
+}
+
+
+@keyframes moving-earth {
+   from{
+        transform: rotate(0deg) translate(120px);
+   }to{
+        transform: rotate(360deg) translate(120px);
+   }
+}
+
+#planet4{
+    width: 29px;
+    height: 29px;
+    background-color: rgb(163, 61, 61);
+    position: absolute;
+    z-index: 1;
+    border-radius: 50%;
+    /* top: 20px; */
+    /* left: 50px; */
+    animation: moving-mars 6.5s linear infinite;
+}
+
+
+@keyframes moving-mars {
+   from{
+        transform: rotate(0deg) translate(150px);
+   }to{
+        transform: rotate(360deg) translate(150px);
+   }
+}
+
+#planet5{
+    width: 60px;
+    height: 68px;
+    background-color: rgb(205, 229, 27);
+    position: absolute;
+    z-index: 1;
+    border-radius: 50%;
+    /* top: 20px; */
+    /* left: 50px; */
+    animation: moving-jupiter 8s linear infinite;
+}
+
+
+@keyframes moving-jupiter {
+   from{
+        transform: rotate(0deg) translate(190px);
+   }to{
+        transform: rotate(360deg) translate(190px);
+   }
+}
+
+#planet6{
+    width: 52px;
+    height: 52px;
+    background-color: rgb(138, 114, 6);
+    position: absolute;
+    z-index: 1;
+    border-radius: 50%;
+    /* top: 20px; */
+    /* left: 50px; */
+    animation: moving-saturn 9.5s linear infinite;
+}
+
+
+@keyframes moving-saturn {
+   from{
+        transform: rotate(0deg) translate(225px);
+   }to{
+        transform: rotate(360deg) translate(225px);
+   }
+}
+
+#planet7{
+    width: 44px;
+    height: 44px;
+    background-color: rgb(102, 178, 237);
+    position: absolute;
+    z-index: 1;
+    border-radius: 50%;
+    /* top: 20px; */
+    /* left: 50px; */
+    animation: moving-uranus 10.1s linear infinite;
+}
+
+
+@keyframes moving-uranus {
+   from{
+        transform: rotate(0deg) translate(270px);
+   }to{
+        transform: rotate(360deg) translate(270px);
+   }
+}
+
+#planet8{
+    width: 42px;
+    height: 42px;
+    background-color: rgb(44, 10, 156);
+    position: absolute;
+    z-index: 1;
+    border-radius: 50%;
+    /* top: 20px; */
+    /* left: 50px; */
+    animation: moving-neptune 10.4s linear infinite;
+}
+
+
+@keyframes moving-neptune {
+   from{
+        transform: rotate(0deg) translate(315px);
+   }to{
+        transform: rotate(360deg) translate(315px);
+   }
+}
+
+#planet9{
+    width: 20px;
+    height: 20px;
+    background-color: rgb(99, 154, 22);
+    position: absolute;
+    z-index: 1;
+    border-radius: 50%;
+    /* top: 20px; */
+    /* left: 50px; */
+    animation: moving-pluto 11s linear infinite;
+}
+
+
+@keyframes moving-pluto {
+   from{
+        transform: rotate(0deg) translate(365px);
+   }to{
+        transform: rotate(360deg) translate(365px);
+   }
+}
