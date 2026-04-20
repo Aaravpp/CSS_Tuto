@@ -20,8 +20,8 @@
 }
 
 #Sun{
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
     background-color: rgb(255, 47, 0);
     border-radius: 50%;
     animation: moving-sun 2s linear infinite;
@@ -42,7 +42,7 @@
 .circle{
     position: absolute;
     border-radius: 50%;
-    background-color: rgba(245, 243, 243, 0.018);
+    background-color: rgba(245, 243, 243, 0.02);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -95,44 +95,46 @@
 }
 
 #planet1{
-    width: 25px;
-    height: 25px;
+    width: 23px;
+    height: 23px;
     background-color: rgb(161, 98, 16);
+    box-shadow: 0 0 10px 4px rgb(141, 91, 6);
     position: absolute;
     z-index: 1;
     border-radius: 50%;
     /* top: 20px; */
     /* left: 50px; */
-    animation: moving-mercury 1.5s linear infinite;
+    animation: moving-mercury 0.7s linear infinite;
 }
 
 
 @keyframes moving-mercury {
    from{
-        transform: rotate(0deg) translate(65px);
+        transform: rotate(0deg) translate(67px);
    }to{
-        transform: rotate(360deg) translate(65px);
+        transform: rotate(360deg) translate(67px);
    }
 }
 
 #planet2{
-    width: 34px;
-    height: 34px;
-    background-color: rgb(132, 44, 11);
+    width: 30px;
+    height: 30px;
+    background-color: rgb(226, 147, 49);
+    box-shadow: 0 0 10px 3px rgb(200, 103, 5);
     position: absolute;
     z-index: 1;
     border-radius: 50%;
     /* top: 20px; */
     /* left: 50px; */
-    animation: moving-venus 3s linear infinite;
+    animation: moving-venus 1.2s linear infinite;
 }
 
 
 @keyframes moving-venus {
    from{
-        transform: rotate(0deg) translate(90px);
+        transform: rotate(0deg) translate(93px);
    }to{
-        transform: rotate(360deg) translate(90px);
+        transform: rotate(360deg) translate(93px);
    }
 }
 
@@ -140,33 +142,35 @@
     width: 37px;
     height: 37px;
     background-color: rgb(50, 111, 215);
+    box-shadow: 0 0 10px 4px rgb(9, 99, 163);
     position: absolute;
     z-index: 1;
     border-radius: 50%;
     /* top: 20px; */
     /* left: 50px; */
-    animation: moving-earth 5.5s linear infinite;
+    animation: moving-earth 2.5s linear infinite;
 }
 
 
 @keyframes moving-earth {
    from{
-        transform: rotate(0deg) translate(120px);
+        transform: rotate(0deg) translate(122px);
    }to{
-        transform: rotate(360deg) translate(120px);
+        transform: rotate(360deg) translate(122px);
    }
 }
 
 #planet4{
     width: 29px;
     height: 29px;
-    background-color: rgb(163, 61, 61);
+    background-color: rgb(132, 44, 11);
+    box-shadow: 0 0 10px 4px rgb(124, 37, 0);
     position: absolute;
     z-index: 1;
     border-radius: 50%;
     /* top: 20px; */
     /* left: 50px; */
-    animation: moving-mars 6.5s linear infinite;
+    animation: moving-mars 3.2s linear infinite;
 }
 
 
@@ -179,15 +183,16 @@
 }
 
 #planet5{
-    width: 60px;
-    height: 68px;
-    background-color: rgb(205, 229, 27);
+    width: 48px;
+    height: 48px;
+    background-color: rgb(178, 161, 111);
+    box-shadow: 0 0 10px 3px rgb(157, 155, 21);
     position: absolute;
     z-index: 1;
     border-radius: 50%;
     /* top: 20px; */
     /* left: 50px; */
-    animation: moving-jupiter 8s linear infinite;
+    animation: moving-jupiter 4.7s linear infinite;
 }
 
 
@@ -200,15 +205,16 @@
 }
 
 #planet6{
-    width: 52px;
-    height: 52px;
-    background-color: rgb(138, 114, 6);
+    width: 42px;
+    height: 46px;
+    background-color: rgb(181, 155, 39);
+    box-shadow: 0 0 10px 5px rgb(232, 228, 32);
     position: absolute;
     z-index: 1;
     border-radius: 50%;
     /* top: 20px; */
     /* left: 50px; */
-    animation: moving-saturn 9.5s linear infinite;
+    animation: moving-saturn 5.5s linear infinite;
 }
 
 
@@ -221,15 +227,16 @@
 }
 
 #planet7{
-    width: 44px;
-    height: 44px;
+    width: 39px;
+    height: 39px;
     background-color: rgb(102, 178, 237);
+    box-shadow: 0 0 10px 2px rgb(10, 188, 215);
     position: absolute;
     z-index: 1;
     border-radius: 50%;
     /* top: 20px; */
     /* left: 50px; */
-    animation: moving-uranus 10.1s linear infinite;
+    animation: moving-uranus 6.4s linear infinite;
 }
 
 
@@ -242,15 +249,16 @@
 }
 
 #planet8{
-    width: 42px;
-    height: 42px;
+    width: 39px;
+    height: 39px;
     background-color: rgb(44, 10, 156);
+    box-shadow: 0 0 10px 2px rgb(46, 5, 181);
     position: absolute;
     z-index: 1;
     border-radius: 50%;
     /* top: 20px; */
     /* left: 50px; */
-    animation: moving-neptune 10.4s linear infinite;
+    animation: moving-neptune 7.4s linear infinite;
 }
 
 
@@ -266,12 +274,13 @@
     width: 20px;
     height: 20px;
     background-color: rgb(99, 154, 22);
+    box-shadow: 0 0 10px 2px rgb(6, 139, 6);
     position: absolute;
     z-index: 1;
     border-radius: 50%;
     /* top: 20px; */
     /* left: 50px; */
-    animation: moving-pluto 11s linear infinite;
+    animation: moving-pluto 8.5s linear infinite;
 }
 
 
