@@ -11,6 +11,8 @@ body{
     line-height: 1.6;
 }
 
+/* main container */
+
 .main-container{
     max-width: 1200px;
     display: grid;
@@ -20,6 +22,8 @@ body{
     padding-top: 40px;
 }
 
+/* Side bar */
+
 .sidebar{
     height: 90vh;
     background-color: #2a2a2a;
@@ -28,10 +32,10 @@ body{
     padding: 40px;
 }
 
-.main-content{
+/* .main-content{
     height: 90vh;
     background-color: #2a2a2a;
-}
+} */
 
 .profile{
     text-align: center;
@@ -99,5 +103,90 @@ body{
 
     img:hover{
         filter: grayscale(0) invert(0);
+    }
+}
+
+/* main content */
+.main-content{
+    background-color: #2a2a2a;
+    border: 2px solid #3a3a3a;
+    border-radius: 20px;
+    padding: 40px;
+}
+
+/* navigation bar */
+
+#navigation{
+    padding-bottom: 25px;
+    border-bottom: 2px solid #3a3a3a;
+
+    nav{
+        display: flex;
+        justify-content: flex-end;
+        gap: 20px;
+
+        a{
+            text-decoration: none;
+            font-weight: 500;
+            color: #a0a0a0;
+            transition: color 0.3s ease;
+        }
+            
+        .active, a:hover{
+            color: #FFBF00;
+        }
+    }
+}
+
+/* about me */
+
+#about{
+    margin-top: 20px;
+    margin-bottom: 40px;
+
+    p{
+        color: #a0a0a0;
+        text-align: justify;
+    }
+}
+.heading{
+    color: #e0e0e0;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.line{
+    width: 65px;
+    height: 5px;
+    background-color: #FFBF00;
+    margin-bottom: 15px;
+}
+
+/* Skills */
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 30px;
+
+    .item{
+        padding: 20px;
+        border-radius: 10px;
+        border: 2px solid #3a3a3a;
+        background-color: #1e1e1e;
+        margin-top: 20px;
+        text-align: center;
+        
+        img{
+            height: 60px;
+            width: 60px;
+            filter: invert(75%) sepia(50%) saturate(1000%) hue-rotate(350deg) brightness(110%) contrast(101%);
+            margin-bottom: 12px;
+        }
+
+        h3{
+            font-size: 1rem;
+            font-weight: 500;
+        }
     }
 }
