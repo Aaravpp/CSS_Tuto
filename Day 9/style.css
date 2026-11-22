@@ -30,6 +30,8 @@ body{
     border: 2px solid #3a3a3a;
     border-radius: 20px;
     padding: 40px;
+    position: sticky;
+    top: 40px;
 }
 
 /* .main-content{
@@ -258,7 +260,7 @@ body{
 .project-container{
     margin-top: 30px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
     gap: 25px;
 
     .project{
@@ -305,3 +307,14 @@ body{
     }
 }
 
+@media (max-width:1200px) {
+    .main-container{
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .sidebar{
+        position: static;
+        height: auto;
+    }
+}
